@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import type { ChangeEvent, FormEvent } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import useStore from '../store';
@@ -53,7 +54,7 @@ function Home() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     navigate('/results');
   };
@@ -78,7 +79,7 @@ function Home() {
                             label="Enter URL, text, or upload a file"
                             variant="outlined"
                             value={currentSource}
-                            onChange={(e) => setCurrentSource(e.target.value)}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => setCurrentSource(e.target.value)}
                             InputProps={{
                                 startAdornment: (
                                     <InputAdornment position="start">
