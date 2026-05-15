@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Typography, Grid, Card, CardContent, CardActions, Button, Chip } from '@mui/material';
 
 const Pricing = () => {
