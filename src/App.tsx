@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Results from "./pages/Results";
+import Pricing from "./pages/Pricing";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { deepPurple } from "@mui/material/colors";
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </ThemeProvider>
   );

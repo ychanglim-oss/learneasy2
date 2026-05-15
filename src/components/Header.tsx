@@ -1,5 +1,6 @@
-import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Button } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -11,6 +12,9 @@ function Header() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           LearnEasy
         </Typography>
+        <Button color="inherit" component={Link} to="/pricing">
+          Pricing
+        </Button>
       </Toolbar>
     </AppBar>
   );
